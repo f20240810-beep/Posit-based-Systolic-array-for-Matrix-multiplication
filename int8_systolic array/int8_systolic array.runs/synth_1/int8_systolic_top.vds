@@ -1,0 +1,267 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Aug 20 20:51:45 2026
+# Process ID         : 22732
+# Current directory  : D:/My Projects/int8_systolic array/int8_systolic array.runs/synth_1
+# Command line       : vivado.exe -log int8_systolic_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source int8_systolic_top.tcl
+# Log file           : D:/My Projects/int8_systolic array/int8_systolic array.runs/synth_1/int8_systolic_top.vds
+# Journal file       : D:/My Projects/int8_systolic array/int8_systolic array.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-9AHDMVJ7
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 5 125H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 18
+# Host memory        : 16568 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18715 MB
+# Available Virtual  : 3250 MB
+#-----------------------------------------------------------
+source int8_systolic_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 532.148 ; gain = 220.363
+Command: synth_design -top int8_systolic_top -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23072
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1255.410 ; gain = 539.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'int8_systolic_top' [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl_int8/int8_systolic_top.v:16]
+INFO: [Synth 8-226] default block is never used [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl_int8/int8_systolic_top.v:59]
+INFO: [Synth 8-6157] synthesizing module 'systolic_array_int8' [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl_int8/systolic_array_int8.v:12]
+	Parameter N bound to: 3 - type: integer 
+	Parameter ACC_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pe_int8' [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl_int8/pe_int8.v:14]
+	Parameter ACC_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'int8_multiplier' [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl_int8/int8_multiplier.v:17]
+	Parameter ACC_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'int8_multiplier' (0#1) [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl_int8/int8_multiplier.v:17]
+INFO: [Synth 8-6157] synthesizing module 'fixed_accumulator' [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl/fixed_accumulator.v:13]
+	Parameter ACC_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fixed_accumulator' (0#1) [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl/fixed_accumulator.v:13]
+INFO: [Synth 8-6157] synthesizing module 'fixed_to_int8' [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl_int8/fixed_to_int8.v:17]
+	Parameter ACC_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fixed_to_int8' (0#1) [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl_int8/fixed_to_int8.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'pe_int8' (0#1) [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl_int8/pe_int8.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'systolic_array_int8' (0#1) [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl_int8/systolic_array_int8.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'int8_systolic_top' (0#1) [D:/My Projects/int8_systolic array/int8_systolic array.srcs/sources_1/imports/rtl_int8/int8_systolic_top.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1374.980 ; gain = 659.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1374.980 ; gain = 659.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1374.980 ; gain = 659.289
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1374.980 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/My Projects/int8_systolic array/int8_systolic array.srcs/constrs_1/imports/3x3_int8_posit8_systolic_array/constraints.xdc]
+Finished Parsing XDC File [D:/My Projects/int8_systolic array/int8_systolic array.srcs/constrs_1/imports/3x3_int8_posit8_systolic_array/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/My Projects/int8_systolic array/int8_systolic array.srcs/constrs_1/imports/3x3_int8_posit8_systolic_array/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/int8_systolic_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/int8_systolic_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1451.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1451.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1451.453 ; gain = 735.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1451.453 ; gain = 735.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1451.453 ; gain = 735.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'int8_systolic_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0001 |                               00
+                 S_CLEAR |                             0010 |                               01
+                   S_RUN |                             0100 |                               10
+                  S_DONE |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'int8_systolic_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1451.453 ; gain = 735.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               72 Bit    Registers := 2     
+	                8 Bit    Registers := 18    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 42    
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 11    
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1454.453 ; gain = 738.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1574.422 ; gain = 858.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1598.523 ; gain = 882.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1614.602 ; gain = 898.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1835.848 ; gain = 1120.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1835.848 ; gain = 1120.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1835.848 ; gain = 1120.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1835.848 ; gain = 1120.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1835.848 ; gain = 1120.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1835.848 ; gain = 1120.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   252|
+|3     |LUT1   |    10|
+|4     |LUT2   |   976|
+|5     |LUT3   |   421|
+|6     |LUT4   |   236|
+|7     |LUT5   |    62|
+|8     |LUT6   |   473|
+|9     |FDCE   |   541|
+|10    |FDPE   |     1|
+|11    |IBUF   |   147|
+|12    |OBUF   |    73|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1835.848 ; gain = 1120.156
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 1835.848 ; gain = 1043.684
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1835.848 ; gain = 1120.156
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1845.941 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 252 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1849.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d9465dc5
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1849.227 ; gain = 1317.078
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1849.227 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/My Projects/int8_systolic array/int8_systolic array.runs/synth_1/int8_systolic_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file int8_systolic_top_utilization_synth.rpt -pb int8_systolic_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 20 20:52:29 2026...

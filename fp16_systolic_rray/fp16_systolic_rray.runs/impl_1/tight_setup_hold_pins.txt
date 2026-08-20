@@ -1,0 +1,18 @@
++====================+===================+==========================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                      |
++====================+===================+==========================================================+
+| clk                | clk               | u_array/GEN_ROW[2].GEN_COL[2].u_pe/u_acc/acc_o_reg[0]/D  |
+| clk                | clk               | u_array/GEN_ROW[1].GEN_COL[1].u_pe/u_acc/acc_o_reg[0]/D  |
+| clk                | clk               | u_array/GEN_ROW[1].GEN_COL[1].u_pe/u_acc/acc_o_reg[31]/D |
+| clk                | clk               | u_array/GEN_ROW[1].GEN_COL[1].u_pe/u_acc/acc_o_reg[1]/D  |
+| clk                | clk               | u_array/GEN_ROW[0].GEN_COL[0].u_pe/u_acc/acc_o_reg[1]/D  |
+| clk                | clk               | u_array/GEN_ROW[0].GEN_COL[0].u_pe/u_acc/acc_o_reg[31]/D |
+| clk                | clk               | u_array/GEN_ROW[2].GEN_COL[1].u_pe/u_acc/acc_o_reg[1]/D  |
+| clk                | clk               | u_array/GEN_ROW[2].GEN_COL[1].u_pe/u_acc/acc_o_reg[0]/D  |
+| clk                | clk               | u_array/GEN_ROW[2].GEN_COL[2].u_pe/u_acc/acc_o_reg[31]/D |
+| clk                | clk               | u_array/GEN_ROW[0].GEN_COL[2].u_pe/u_acc/acc_o_reg[1]/D  |
+| clk                | clk               | u_array/GEN_ROW[0].GEN_COL[0].u_pe/u_acc/acc_o_reg[0]/D  |
+| clk                | clk               | u_array/GEN_ROW[0].GEN_COL[2].u_pe/u_acc/acc_o_reg[0]/D  |
+| clk                | clk               | u_array/GEN_ROW[2].GEN_COL[2].u_pe/u_acc/acc_o_reg[1]/D  |
+| clk                | clk               | u_array/GEN_ROW[2].GEN_COL[1].u_pe/u_acc/acc_o_reg[31]/D |
++--------------------+-------------------+----------------------------------------------------------+

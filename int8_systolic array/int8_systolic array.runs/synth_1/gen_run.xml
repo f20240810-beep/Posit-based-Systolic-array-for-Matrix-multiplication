@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1787239303">
+  <File Type="PA-TCL" Name="int8_systolic_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="int8_systolic_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="int8_systolic_top.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="int8_systolic_top_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="int8_systolic_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="int8_systolic_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="int8_systolic_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="int8_systolic_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="int8_systolic_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/fixed_accumulator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../3x3_int8_posit8_systolic_array/rtl/fixed_accumulator.v"/>
+        <Attr Name="ImportTime" Val="1787236264"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl_int8/fixed_to_int8.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/rtl_int8/fixed_to_int8.v"/>
+        <Attr Name="ImportTime" Val="1787236265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl_int8/int8_multiplier.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/rtl_int8/int8_multiplier.v"/>
+        <Attr Name="ImportTime" Val="1787236265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl_int8/pe_int8.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/rtl_int8/pe_int8.v"/>
+        <Attr Name="ImportTime" Val="1787236265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl_int8/systolic_array_int8.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/rtl_int8/systolic_array_int8.v"/>
+        <Attr Name="ImportTime" Val="1787236265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl_int8/int8_systolic_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/rtl_int8/int8_systolic_top.v"/>
+        <Attr Name="ImportTime" Val="1787236265"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="int8_systolic_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/3x3_int8_posit8_systolic_array/constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../3x3_int8_posit8_systolic_array/constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1786817843"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

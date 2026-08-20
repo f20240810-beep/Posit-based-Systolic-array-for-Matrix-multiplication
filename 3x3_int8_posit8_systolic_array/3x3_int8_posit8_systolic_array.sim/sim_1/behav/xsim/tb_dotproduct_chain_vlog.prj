@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../2025.2/Vivado/data/rsb/busdef" \
+"../../../../../posit8_systolic_array/rtl/fixed_to_posit8.v" \
+"../../../../../posit8_systolic_array/rtl/posit8_multiplier.v" \
+"../../../../../posit8_systolic_array/rtl/posit8_pack.v" \
+"../../../../../posit8_systolic_array/rtl/posit8_unpack.v" \
+"../../../../3x3_int8_posit8_systolic_array.srcs/sim_1/imports/tb/tb_dotproduct_chain.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

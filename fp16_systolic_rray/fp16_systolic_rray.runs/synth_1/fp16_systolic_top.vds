@@ -1,0 +1,359 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Aug 20 20:56:46 2026
+# Process ID         : 13632
+# Current directory  : D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.runs/synth_1
+# Command line       : vivado.exe -log fp16_systolic_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fp16_systolic_top.tcl
+# Log file           : D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.runs/synth_1/fp16_systolic_top.vds
+# Journal file       : D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-9AHDMVJ7
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 5 125H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 18
+# Host memory        : 16568 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18715 MB
+# Available Virtual  : 3179 MB
+#-----------------------------------------------------------
+source fp16_systolic_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 528.891 ; gain = 217.414
+Command: synth_design -top fp16_systolic_top -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5080
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1255.371 ; gain = 540.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fp16_systolic_top' [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp16_systolic_top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'int8_to_fp16' [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/int8_to_fp16.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'int8_to_fp16' (0#1) [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/int8_to_fp16.v:18]
+INFO: [Synth 8-6157] synthesizing module 'fp16_to_int8' [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp16_to_int8.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'fp16_to_int8' (0#1) [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp16_to_int8.v:12]
+INFO: [Synth 8-226] default block is never used [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp16_systolic_top.v:77]
+INFO: [Synth 8-6157] synthesizing module 'systolic_array_fp16' [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/systolic_array_fp16.v:12]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pe_fp16' [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/pe_fp16.v:13]
+INFO: [Synth 8-6157] synthesizing module 'fp16_multiplier' [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp16_multiplier.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'fp16_multiplier' (0#1) [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp16_multiplier.v:26]
+INFO: [Synth 8-6157] synthesizing module 'fp32_accumulator' [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp32_accumulator.v:15]
+INFO: [Synth 8-6157] synthesizing module 'fp32_adder' [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp32_adder.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'fp32_adder' (0#1) [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp32_adder.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'fp32_accumulator' (0#1) [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp32_accumulator.v:15]
+INFO: [Synth 8-6157] synthesizing module 'fp32_to_fp16' [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp32_to_fp16.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'fp32_to_fp16' (0#1) [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp32_to_fp16.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'pe_fp16' (0#1) [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/pe_fp16.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'systolic_array_fp16' (0#1) [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/systolic_array_fp16.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'fp16_systolic_top' (0#1) [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/sources_1/imports/rtl_fp16/fp16_systolic_top.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1380.309 ; gain = 665.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1380.309 ; gain = 665.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1380.309 ; gain = 665.676
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1380.309 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/constrs_1/imports/3x3_int8_posit8_systolic_array/constraints.xdc]
+Finished Parsing XDC File [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/constrs_1/imports/3x3_int8_posit8_systolic_array/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.srcs/constrs_1/imports/3x3_int8_posit8_systolic_array/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fp16_systolic_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fp16_systolic_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1463.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1463.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1463.234 ; gain = 748.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1463.234 ; gain = 748.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1463.234 ; gain = 748.602
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fp16_systolic_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0001 |                               00
+                 S_CLEAR |                             0010 |                               01
+                   S_RUN |                             0100 |                               10
+                  S_DONE |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fp16_systolic_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1463.234 ; gain = 748.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   29 Bit       Adders := 9     
+	   2 Input   28 Bit       Adders := 9     
+	   2 Input   25 Bit       Adders := 9     
+	   2 Input   22 Bit       Adders := 9     
+	   2 Input   11 Bit       Adders := 9     
+	   2 Input   10 Bit       Adders := 54    
+	   3 Input   10 Bit       Adders := 18    
+	   2 Input    9 Bit       Adders := 18    
+	   2 Input    8 Bit       Adders := 45    
+	   2 Input    7 Bit       Adders := 9     
+	   3 Input    7 Bit       Adders := 9     
+	   2 Input    6 Bit       Adders := 9     
+	   2 Input    5 Bit       Adders := 38    
+	   2 Input    4 Bit       Adders := 19    
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	               72 Bit    Registers := 2     
+	               32 Bit    Registers := 9     
+	               16 Bit    Registers := 18    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 18    
+	   2 Input   27 Bit        Muxes := 18    
+	   2 Input   24 Bit        Muxes := 18    
+	   2 Input   23 Bit        Muxes := 18    
+	   2 Input   22 Bit        Muxes := 9     
+	   2 Input   16 Bit        Muxes := 69    
+	   3 Input   16 Bit        Muxes := 6     
+	   2 Input   10 Bit        Muxes := 63    
+	   2 Input    9 Bit        Muxes := 18    
+	   2 Input    8 Bit        Muxes := 90    
+	   2 Input    5 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 407   
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP u_mult/sig_prod, operation Mode is: A*B.
+DSP Report: operator u_mult/sig_prod is absorbed into DSP u_mult/sig_prod.
+DSP Report: Generating DSP u_mult/sig_prod, operation Mode is: A*B.
+DSP Report: operator u_mult/sig_prod is absorbed into DSP u_mult/sig_prod.
+DSP Report: Generating DSP u_mult/sig_prod, operation Mode is: A*B.
+DSP Report: operator u_mult/sig_prod is absorbed into DSP u_mult/sig_prod.
+DSP Report: Generating DSP u_mult/sig_prod, operation Mode is: A*B.
+DSP Report: operator u_mult/sig_prod is absorbed into DSP u_mult/sig_prod.
+DSP Report: Generating DSP u_mult/sig_prod, operation Mode is: A*B.
+DSP Report: operator u_mult/sig_prod is absorbed into DSP u_mult/sig_prod.
+DSP Report: Generating DSP u_mult/sig_prod, operation Mode is: A*B.
+DSP Report: operator u_mult/sig_prod is absorbed into DSP u_mult/sig_prod.
+DSP Report: Generating DSP u_mult/sig_prod, operation Mode is: A*B.
+DSP Report: operator u_mult/sig_prod is absorbed into DSP u_mult/sig_prod.
+DSP Report: Generating DSP u_mult/sig_prod, operation Mode is: A*B.
+DSP Report: operator u_mult/sig_prod is absorbed into DSP u_mult/sig_prod.
+DSP Report: Generating DSP u_mult/sig_prod, operation Mode is: A*B.
+DSP Report: operator u_mult/sig_prod is absorbed into DSP u_mult/sig_prod.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:29 ; elapsed = 00:02:38 . Memory (MB): peak = 1973.012 ; gain = 1258.379
+---------------------------------------------------------------------------------
+ Sort Area is  u_mult/sig_prod_0 : 0 0 : 863 863 : Used 1 time 0
+ Sort Area is  u_mult/sig_prod_2 : 0 0 : 863 863 : Used 1 time 0
+ Sort Area is  u_mult/sig_prod_3 : 0 0 : 863 863 : Used 1 time 0
+ Sort Area is  u_mult/sig_prod_4 : 0 0 : 863 863 : Used 1 time 0
+ Sort Area is  u_mult/sig_prod_5 : 0 0 : 863 863 : Used 1 time 0
+ Sort Area is  u_mult/sig_prod_6 : 0 0 : 863 863 : Used 1 time 0
+ Sort Area is  u_mult/sig_prod_7 : 0 0 : 863 863 : Used 1 time 0
+ Sort Area is  u_mult/sig_prod_8 : 0 0 : 863 863 : Used 1 time 0
+ Sort Area is  u_mult/sig_prod_9 : 0 0 : 863 863 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:36 ; elapsed = 00:02:45 . Memory (MB): peak = 1973.012 ; gain = 1258.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:48 ; elapsed = 00:02:58 . Memory (MB): peak = 1973.012 ; gain = 1258.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:52 ; elapsed = 00:03:03 . Memory (MB): peak = 2175.707 ; gain = 1461.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:56 ; elapsed = 00:03:07 . Memory (MB): peak = 2190.492 ; gain = 1475.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:56 ; elapsed = 00:03:07 . Memory (MB): peak = 2190.492 ; gain = 1475.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:57 ; elapsed = 00:03:08 . Memory (MB): peak = 2190.492 ; gain = 1475.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:57 ; elapsed = 00:03:08 . Memory (MB): peak = 2190.492 ; gain = 1475.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:57 ; elapsed = 00:03:08 . Memory (MB): peak = 2190.492 ; gain = 1475.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:57 ; elapsed = 00:03:08 . Memory (MB): peak = 2190.492 ; gain = 1475.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fp16_multiplier | A*B         | 11     | 11     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   378|
+|3     |DSP48E1 |     9|
+|4     |LUT1    |   191|
+|5     |LUT2    |   785|
+|6     |LUT3    |   803|
+|7     |LUT4    |  1196|
+|8     |LUT5    |  1658|
+|9     |LUT6    |  4314|
+|10    |MUXF7   |    18|
+|11    |FDCE    |   589|
+|12    |FDPE    |     1|
+|13    |IBUF    |   147|
+|14    |OBUF    |    73|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:57 ; elapsed = 00:03:08 . Memory (MB): peak = 2190.492 ; gain = 1475.859
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:49 ; elapsed = 00:03:06 . Memory (MB): peak = 2190.492 ; gain = 1392.934
+Synthesis Optimization Complete : Time (s): cpu = 00:02:58 ; elapsed = 00:03:09 . Memory (MB): peak = 2190.492 ; gain = 1475.859
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.147 . Memory (MB): peak = 2198.723 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 405 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2202.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e88ae0a9
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:03 ; elapsed = 00:03:16 . Memory (MB): peak = 2202.414 ; gain = 1673.523
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2202.414 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/My Projects/fp16_systolic_rray/fp16_systolic_rray.runs/synth_1/fp16_systolic_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fp16_systolic_top_utilization_synth.rpt -pb fp16_systolic_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 20 21:00:11 2026...

@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Thu Aug 20 20:53:32 2026
+| Host         : LAPTOP-9AHDMVJ7 running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file int8_systolic_top_bus_skew_routed.rpt -pb int8_systolic_top_bus_skew_routed.pb -rpx int8_systolic_top_bus_skew_routed.rpx
+| Design       : int8_systolic_top
+| Device       : 7k70t-fbv676
+| Speed File   : -1  PRODUCTION 1.12 2017-02-17
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

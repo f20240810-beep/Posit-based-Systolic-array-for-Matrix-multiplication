@@ -1,0 +1,47 @@
+# Vivado generated files
+*.jou
+*.log
+*.str
+
+# Vivado generated directories
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.gen/
+.runs/
+.data/
+
+# Vivado user files
+*.xpr.user
+*.xpr.user.*
+*.pb
+
+# Simulation generated files
+*.wdb
+*.vcd
+*.vpd
+*.wcfg
+
+# Generated hardware files
+*.bit
+*.bin
+*.ltx
+*.dcp
+
+# Temporary / backup files
+*.tmp
+*.bak
+*.backup
+
+# Operating system
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Python cache (if you later use Python scripts)
+__pycache__/
+*.pyc
